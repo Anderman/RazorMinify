@@ -31,7 +31,7 @@ namespace Anderman.RazorMinify
         {
             // Adding a prefix so that the main view class can be easily identified.
             var className = MainClassNamePrefix + ParserHelpers.SanitizeClassName(rootRelativePath);
-            var engine = new MyRazorTemplateEngine(this,_host);
+            var engine = new MyRazorTemplateEngine(this, _host);
             return engine.GenerateCode(inputStream, className, DefaultNamespace, rootRelativePath);
         }
         public CodeGenerator DecorateCodeGenerator(CodeGenerator incomingGenerator, CodeGeneratorContext context)

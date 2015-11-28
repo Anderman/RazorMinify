@@ -15,7 +15,7 @@ namespace Anderman.RazorMinify
 
         protected override CodeGenerator CreateCodeGenerator(CodeGeneratorContext context)
         {
-            return Host.DecorateCodeGenerator(Host.CodeLanguage.CreateCodeGenerator(context), context);
+            return _myHost.DecorateCodeGenerator(Host.CodeLanguage.CreateCodeGenerator(context), context);
         }
     }
 }

@@ -18,8 +18,8 @@ namespace Anderman.RazorMinify
 
         protected override void Visit(LiteralChunk chunk)
         {
-
             Debugger.Launch();
+
             if (Context.Host.DesignTimeMode || string.IsNullOrEmpty(chunk.Text))
             {
                 // Skip generating the chunk if we're in design time or if the chunk is empty.
