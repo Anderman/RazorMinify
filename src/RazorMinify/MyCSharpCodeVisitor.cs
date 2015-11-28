@@ -11,11 +11,16 @@ namespace Anderman.RazorMinify
     // This project can output the Class library as a NuGet Package.
     // To enable this option, right-click on the project and select the Properties menu item. In the Build tab select "Produce outputs on build".
 
-    public class MyCSharpCodeVisitor : MvcCSharpCodeVisitor
+    public class MyCSharpCodeVisitor : CSharpCodeVisitor
     {
         public MyCSharpCodeVisitor(CSharpCodeWriter writer, CodeGeneratorContext context) : base(writer, context)
         {
+            Writer = writer;
+            Context = context;
         }
+
+        protected CSharpCodeWriter Writer { get; private set; }
+        protected CodeGeneratorContext Context { get; private set; }
 
         protected override void Visit(LiteralChunk chunk)
         {
@@ -52,7 +57,7 @@ namespace Anderman.RazorMinify
 
         private CSharpCodeWriter RenderPreWriteStart()
         {
-            return RenderPreWriteStart();
+            return RenderPreWriteStart(Writer, Context);
         }
     }
 }
