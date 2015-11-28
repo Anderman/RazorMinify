@@ -18,7 +18,7 @@ namespace Anderman.RazorMinify
 
         protected override void Visit(LiteralChunk chunk)
         {
-            Debugger.Launch();
+            chunk.Text=chunk.Text.Replace("\t", " ").Replace("\r", " ").Replace("\n", " ").Replace("        ", " ").Replace("    ", " ").Replace("  ", " ");
 
             if (Context.Host.DesignTimeMode || string.IsNullOrEmpty(chunk.Text))
             {
