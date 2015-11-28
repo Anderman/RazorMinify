@@ -1,4 +1,4 @@
 # RazorMinify
 Example setup for razor minify 
 
-Not working yet!!!
+1e demo with minify. Only minify space, and CRLF, tap
