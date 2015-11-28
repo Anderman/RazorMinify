@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Anderman.RazorMinify", "src\RazorMinify\Anderman.RazorMinify.xproj", "{A1589AB8-E7F7-4270-8713-9E7960CEF1B5}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "HtmlMinify", "Samples\HtmlMinify\HtmlMinify.xproj", "{FDEC743A-62C2-4EA0-8770-9304E9864BB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,11 +24,16 @@ Global
 		{A1589AB8-E7F7-4270-8713-9E7960CEF1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1589AB8-E7F7-4270-8713-9E7960CEF1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1589AB8-E7F7-4270-8713-9E7960CEF1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEC743A-62C2-4EA0-8770-9304E9864BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEC743A-62C2-4EA0-8770-9304E9864BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEC743A-62C2-4EA0-8770-9304E9864BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEC743A-62C2-4EA0-8770-9304E9864BB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A1589AB8-E7F7-4270-8713-9E7960CEF1B5} = {C94F1037-79F0-4985-86FF-A266F08D9C1B}
+		{FDEC743A-62C2-4EA0-8770-9304E9864BB9} = {C94F1037-79F0-4985-86FF-A266F08D9C1B}
 	EndGlobalSection
 EndGlobal
